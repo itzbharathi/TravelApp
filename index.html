@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TravelNow - Explore the World</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; background: #f0f8ff; }
+    header {
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    header h1 { font-size: 60px; margin-bottom: 10px; }
+    header p { font-size: 24px; }
+
+    nav {
+      background: #0077b6;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .destinations {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+      overflow: hidden;
+      width: 300px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      padding: 10px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    form button {
+      padding: 10px 20px;
+      background: #0077b6;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #023e8a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 40px; }
+      .card { width: 90%; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#destinations">Destinations</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>TravelNow</h1>
+    <p>Discover Beautiful Places Around the World</p>
+  </header>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We help travelers explore the world with curated trips, travel tips, and destination guides. Whether you're looking for beaches, mountains, or cities, TravelNow has it all!</p>
+  </section>
+
+  <section id="destinations">
+    <h2>Top Destinations</h2>
+    <div class="destinations">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Paris">
+        <h3>Paris, France</h3>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c" alt="Tokyo">
+        <h3>Tokyo, Japan</h3>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98" alt="Bali">
+        <h3>Bali, Indonesia</h3>
+      </div>
+  
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1533907650686-70576141c030" alt="New York">
+        <h3>New York, USA</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 TravelNow. All rights reserved.
+  </footer>
+
+</body>
+</html>
